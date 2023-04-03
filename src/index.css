@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.responsive{
+    width: 1634px;
+    max-width: calc(100% - 3rem);
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .responsive{
+        max-width: calc(100% - 4rem);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .responsive{
+        max-width: calc(83.3% - 6rem);
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .responsive{
+        max-width: calc(66.6% - 6rem);
+    }
+}
+
+.bg-hero-pattern
+{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url("/src/assets/popsignup.jpg");
+}
