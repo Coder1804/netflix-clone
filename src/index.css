@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root
+{
+    --custom-input-bg:"#333333";
+    --custom-input-text:"#858585";
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +51,8 @@
     color: #000;
     background-color: #e6e6e6;
 }
+
+
 @media only screen and (min-width: 600px) {
     .responsive{
         max-width: calc(100% - 4rem);

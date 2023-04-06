@@ -4,11 +4,14 @@ import requests from "../apis/bannerApi.js";
 
 function Banner() {
     const [movie,setMovie] = useState([]);
+    const [bannerTitle,setBannerTitle] = useState('New films')
     const takeStringRange = (text,to)=>{
         return text?.length > to ? text.substr(0,to-1)+ '...'
             : text
     }
-
+    useEffect(()=>{
+       document.title = movie?.title || movie?.name || movie?.original_name || 'New films in Netflix'
+    },[movie])
     useEffect(()=>{
         async function fetchData()
         {
@@ -16,6 +19,7 @@ function Banner() {
             setMovie(req?.data?.results[
                 Math.floor(Math.random() * req?.data?.results.length - 1)
                 ])
+            // setBannerTitle(movi)
         }
         fetchData().catch(err=>console.log('err',err));
     },[])

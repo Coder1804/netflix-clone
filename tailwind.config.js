@@ -11,10 +11,11 @@ export default {
         secondary:"#564d4d",
         question:"#2d2d2d",
         'question-hover':"#4e4e4e",
-        "primary-red":"#831010"
+        "primary-red":"#831010",
+        "input" : "#333333",
       },
       backgroundImage:{
-        'bannerImage':"url('https://t3.ftcdn.net/jpg/04/10/34/54/360_F_410345403_tV5hpFLJ7VCSgsAYJRC74tG4DA9LTXyC.jpg')"
+        'bannerImage':"url('http://www.mub.eps.manchester.ac.uk/uommaterialsblog/wp-content/themes/uom-theme/assets/images/default-banner.jpg')"
       }
     },
   },

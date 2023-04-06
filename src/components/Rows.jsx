@@ -7,8 +7,10 @@ function Rows() {
     return (
         <div className="bg-black">
             {titleRow.map((title,index)=>
-                (<Row key ={title} title = {title}
-                    fetchUrl = {Object.values(requests)[index]}/>))
+                (<Row key ={title}
+                      title = {title}
+                      isLargeRow={index === 0 && true}
+                      fetchUrl = {Object.values(requests)[index]}/>))
             }
         </div>
     );

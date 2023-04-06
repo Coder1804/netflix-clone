@@ -34,7 +34,27 @@ export const questions = [
         answer:"Your browser preferences determine the language shown here."
     },
 ]
+export const footerNotHome = [
+    {
+        link:"FAQ"
+    },
+    {
+        link:"Help Center"
+    },
 
+    {
+        link:"Terms of Use"
+    },
+    {
+        link:"Privacy"
+    },
+    {
+        link:"Cookie Preference"
+    },
+    {
+        link:"Corporate Information"
+    },
+]
 export const footer = [
     {
         link:"FAQ"

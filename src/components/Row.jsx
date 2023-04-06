@@ -19,17 +19,20 @@ function Row({title,fetchUrl , isLargeRow = false}) {
     return (
         <div className="text-white p-5">
             <h1>{title}</h1>
-            <div className="flex overflow-x-auto overflow-y-hidden">
+            <div className="flex overflow-x-auto overflow-y-hidden p-2">
                     {
-                        movies.map((movie,index)=>(
+                        movies.map((movie,index)=>
+                            ((isLargeRow && movie.poster_path) ||
+                                (!isLargeRow && movie.backdrop_path)) && (
                                 <img
                                     key={movie.id}
-                                    className="max-h-[100px] object-contain mr-2"
+                                    className={`${isLargeRow ? 'max-h-[250px] hover:scale-[1.1]' : 'max-h-[100px] hover:scale-[1.09]'} object-contain mr-4 duration-[450ms]  cursor-pointer`}
                                     loading="lazy"
                                     alt={movie.name}
-                                    src={`${baseUrl}${isLargeRow ? movie?.poster_path:movie?.backdrop_path}`}
+                                    src={`${baseUrl}${isLargeRow ? movie.poster_path:movie.backdrop_path}`}
                                 />
-                        ))
+                            )
+                        )
                     }
                 </div>
         </div>

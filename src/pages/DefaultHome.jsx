@@ -3,6 +3,7 @@ import PopUp from "../components/PopUp.jsx";
 import Features from "../components/Features.jsx";
 import Questions from "../components/Questions.jsx";
 import Footer from "../components/Footer.jsx";
+import {footer} from "../constant/index.js";
 
 
 
@@ -15,7 +16,7 @@ function DefaultHome() {
             <PopUp/>
             <Features/>
             <Questions/>
-            <Footer/>
+            <Footer footerLinks={footer}/>
         </div>
     );
 }
