@@ -13,9 +13,9 @@ export default {
         'question-hover':"#4e4e4e",
         "primary-red":"#831010"
       },
-      // backgroundImage:{
-      //   'hero-pattern':"url('/src/assets/popsignup.jpg')"
-      // }
+      backgroundImage:{
+        'bannerImage':"url('https://t3.ftcdn.net/jpg/04/10/34/54/360_F_410345403_tV5hpFLJ7VCSgsAYJRC74tG4DA9LTXyC.jpg')"
+      }
     },
   },
   plugins: [],

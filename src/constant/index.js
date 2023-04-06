@@ -83,3 +83,14 @@ export const footer = [
     },
 
 ]
+
+export const titleRow = [
+    "Netflix Originals",
+    "Trending Now",
+    "Top Rated",
+    "Action Movies",
+    "Comedy Movies",
+    "Horror Movies",
+    "Romance Movies",
+    "Documentaries"
+]
